@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <form method="POST" action="http://localhost:3000/profile">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName">
+    </div>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName">
+    </div>
+    <div>
+      <label for="javascript">
+        <input type="radio" id="javascript" name="favoriteLanguage" value="JavaScript">
+        JavaScript
+      </label>
+    </div>
+    <div>
+      <label for="python">
+        <input type="radio" id="python" name="favoriteLanguage" value="Python">
+        Python
+      </label>
+    </div>
+    <div>
+      <label for="java">
+        <input type="radio" id="java" name="favoriteLanguage" value="Java">
+        Java
+      </label>
+    </div>
+    <div>
+      <label for="sedan">
+        <input type="checkbox" id="sedan" name="vehicleType" value="Sedan">
+        Sedan
+      </label>
+    </div>
+    <div>
+      <label for="hatchback">
+        <input type="checkbox" id="hatchback" name="vehicleType" value="Hatchback">
+        Hatchback
+      </label>
+    </div>
+    <div>
+      <label for="suv">
+        <input type="checkbox" id="suv" name="vehicleType" value="SUV">
+        SUV
+      </label>
+    </div>
+    <div>
+      <label for="carBrand">Car Brand:</label>
+      <select id="carBrand" name="carBrand">
+        <option value="Toyota">Toyota</option>
+        <option value="Ford">Ford</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Honda">Honda</option>
+        <option value="Nissan">Nissan</option>
+      </select>
+    </div>
+    <button type="submit">Submit form</button>
+  </form>
+
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="index.html">Index</a>
+    </nav>
+  </header>
+
+  <main>
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

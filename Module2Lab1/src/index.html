@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="This is my Lab1 - HTML activity for IOD." />
+  <meta name="keywords" content="HTML, CSS, JavaScript, IOD, Web Development" />
+  <meta name="author" content="Mark Enriquez" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Lab1 - HTML</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>My HTML learning journey</h1>
+  <article>
+    <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+
+    <div>HTML Div</div>
+    <div>CSS Div</div>
+    <div>JavaScript Div</div>
+
+    <span>HTML Span</span>
+    <span>CSS Span</span>
+    <span>JavaScript Span</span>
+
+    <p>
+      p represents paragraph without preserving spacing
+    </p>
+    <pre>
+    Text in         a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks
+  </pre>
+
+    <ul>
+      <li>Kimi Antonelli</li>
+      <li>Carlos Sainz</li>
+      <li>Alex Albon</li>
+      <li>Charles Leclerc</li>
+    </ul>
+
+    <ol>
+      <li>Mercedes</li>
+      <li>Ferrari</li>
+      <li>McLaren
+        <ul>
+          <li>Lando Norris</li>
+          <li>Oscar Piastri</li>
+        </ul>
+      </li>
+    </ol>
+  </article>
+  <article>
+    <h2>Learning elements - table, thead, tbody, tr, td, th</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>First header</th>
+          <th colspan="2">Second header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First cell - first row</td>
+          <td>Second cell - first row</td>
+          <td>Third cell - first row</td>
+        </tr>
+        <tr>
+          <td>First cell - second row</td>
+          <td rowspan="2">Second cell - second row</td>
+          <td>Third cell - third row</td>
+        </tr>
+        <tr>
+          <td>First cell - third row</td>
+          <td>Second cell - third row</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+  <article>
+    <h2>Learning elements - img, video, audio</h2>
+
+    <img src="https://picsum.photos/400/400" alt="Random Photo" width="300" height="250" />
+    <img src="assets/html_lab_image.jpg" alt="Sea of Clouds" width="300" height="250" />
+
+    <video autoplay width="250">
+      <source src="/assets/flower.webm" type="video/webm">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <audio autoplay src="/assets/t-rex-roar.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+
+  </article>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="form.html">Form</a>
+    </nav>
+  </header>
+
+  <main></main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

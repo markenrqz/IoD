@@ -1,0 +1,190 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.style-me1 {
+  color: red;
+}
+
+#style-me2 {
+  color: blue;
+}
+
+.style-me1#style-me2 {
+  color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+  background-color: red;
+}
+
+.my-children-are-styled > p {
+  background-color: lightgreen;
+}
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+.box {
+  background-color: blanchedalmond;
+  /*1-value*/
+  margin: 1rem;
+  padding: 3rem;
+  /*2-value top-bottom, left-right*/
+  /* margin: 20px 40px;
+  padding: 20px 40px; */
+  /*4-value top, right, bottom, left */
+  /* margin: 20px 40px 30px 50px;
+  padding: 20px 40px 30px 50px; */
+
+  /* width: 75vw;
+  height: 10vh !important; */
+
+  /* border: 10px dashed rgb(62, 20, 20); */
+  /* border: 10px double #8f7035; */
+  border: 10px solid black;
+
+  box-sizing: content-box;
+  background: lightblue;
+  /* box-sizing: border-box;
+  background: lightgreen; */
+
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  overflow: auto;
+
+  outline: 10px dotted black;
+
+  /* border-radius: 1em; */
+
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+
+  background-image: url("../assets/images/img1.png");
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-size: auto; */
+
+  background-repeat: no-repeat;
+  /* background-repeat: space; */
+  /* background-repeat: round; */
+
+  background-position: center;
+  /* background-position: top right;
+  background-position: bottom left; */
+}
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+.position-absolute {
+  position: absolute;
+  top: 0;
+  /* left: 150px; */
+  right: 100px;
+  background-color: cadetblue;
+}
+
+.position-relative {
+  position: relative;
+  background-color: rgb(144, 208, 95);
+}
+
+.position-sticky {
+  position: sticky;
+  background-color: orange;
+  top: 0;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+.text-style {
+  color: darkblue;
+  /* color: red; */
+  /* color: #3498db; */
+  /* color: rgb(255, 0, 0); */
+
+  font-size: 24px;
+  /* font-size: 2rem; */
+  /* font-size: 150%; */
+
+  line-height: 1.5;
+  /* line-height: 40px; */
+  /* line-height: 2; */
+
+  font-weight: 700;
+  /* font-weight: bold; */
+  /* font-weight: 100; */
+  /* font-weight: 400; */
+  /* font-weight: 900; */
+
+  font-family: "Roboto", sans-serif;
+
+  text-align: center;
+  /* text-align: left; */
+  /* text-align: right; */
+  /* text-align: justify; */
+
+  letter-spacing: 1px;
+  /* letter-spacing: 5px; */
+
+  word-spacing: 5px;
+  /* word-spacing: 20px; */
+
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  text-transform: capitalize;
+
+  text-decoration: underline;
+  /* text-decoration: line-through; */
+  /* text-decoration: overline; */
+  /* text-decoration: none; */
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+a,
+a:link {
+  color: blue;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+  font-style: italic;
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+.calc-style {
+  width: 100vw;
+  background-color: lightblue;
+  width: calc(100vw - 100px);
+}
+
+.fixed-width-col {
+  width: 350px;
+  display: inline-block;
+  background-color: lightcoral;
+}
+
+.fluid-col {
+  display: inline-block;
+  width: calc(100% - 350px);
+  background-color: lightgreen;
+}
