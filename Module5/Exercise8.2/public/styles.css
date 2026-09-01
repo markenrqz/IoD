@@ -1,0 +1,21 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.product-image {
+  height: 200px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.card-text {
+  font-size: 14px;
+}

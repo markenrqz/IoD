@@ -1,0 +1,44 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Fake E-Commerce Store API",
+      "description": "API for Fake E-Commerce Store",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Products",
+        "description": "API for retrieving products"
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/api/products": {
+        "get": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Get all products",
+          "responses": {
+            "200": {
+              "description": "Returns all products"
+            }
+          }
+        }
+      }
+    }
+  }
