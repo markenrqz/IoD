@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mini Project 1 - Foodbook" />
+    <title>Foodbook | Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a class="logo" href="index.html">
+                <i class="bi bi-book"></i>
+                Foodbook
+            </a>
+            <button id="menu-button" class="menu-button" type="button">
+                <i class="bi bi-list"></i>
+            </button>
+            <nav id="main-navigation">
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="small-heading">Recipe Finder</p>
+                    <h1>Find your next favourite recipe</h1>
+                    <p>
+                        Browse recipes, search by ingredients, and discover
+                        meals from different cuisines around the world.
+                    </p>
+                    <a class="button primary-button" href="recipes.html">
+                        Browse Recipes
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                        alt="A colourful meal with vegetables" />
+                </div>
+            </div>
+        </section>
+        <section class="featured-recipes">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="small-heading">Featured Recipes</p>
+                        <h2>Recipe ideas for today</h2>
+                    </div>
+                    <a href="recipes.html">View all recipes</a>
+                </div>
+                <div id="featured-recipes" class="recipe-list"></div>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How Foodbook works</h2>
+                <div class="steps">
+                    <article class="step">
+                        <i class="bi bi-search"></i>
+                        <h3>Search</h3>
+                        <p>
+                            Search recipes by recipe name or main ingredient.
+                        </p>
+                    </article>
+                    <article class="step">
+                        <i class="bi bi-funnel"></i>
+                        <h3>Filter</h3>
+                        <p>
+                            Filter recipes by cuisine or course.
+                        </p>
+                    </article>
+                    <article class="step">
+                        <i class="bi bi-journal-text"></i>
+                        <h3>View</h3>
+                        <p>
+                            View ingredients and cooking instructions.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <p>
+                &copy; <span id="current-year"></span> Foodbook
+            </p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+            </div>
+        </div>
+    </footer>
+    <template id="recipe-card-template">
+        <article class="recipe-card">
+            <img class="recipe-image" src="" alt="" />
+            <div class="recipe-card-content">
+                <h3 class="recipe-title"></h3>
+                <p>
+                    <strong>Cuisine:</strong>
+                    <span class="recipe-cuisine"></span>
+                </p>
+                <p>
+                    <strong>Main ingredient:</strong>
+                    <span class="recipe-ingredient"></span>
+                </p>
+                <p>
+                    <strong>Time:</strong>
+                    <span class="recipe-time"></span>
+                </p>
+                <a class="button secondary-button recipe-link">
+                    View Recipe
+                </a>
+            </div>
+        </article>
+    </template>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
