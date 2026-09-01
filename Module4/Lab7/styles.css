@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+
+  animation-name: slideDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slideDown {
+  from {
+    margin-top: 0;
+    background-color: blue;
+  }
+
+  to {
+    margin-top: 300px;
+    background-color: orange;
+  }
+}

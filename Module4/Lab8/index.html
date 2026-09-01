@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Luxon DateTime Formatting</title>
+
+    <!-- reference Luxon library -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.5.0/build/global/luxon.min.js"></script>
+</head>
+
+<body>
+    <h2>Luxon Date</h2>
+
+    <!-- container for Luxon output -->
+    <div id="displayLuxon"></div>
+
+    <script type="text/javascript">
+        (() => {
+            // create a shortcut and a new Luxon date
+            const DateTime = luxon.DateTime;
+            const nowLuxon = DateTime.now();
+
+            const eDisplayLuxon = document.getElementById("displayLuxon");
+
+            // Change this to your actual birthday
+            const birthday = DateTime.fromISO("1998-12-27");
+
+            // 1. Calculate the number of days between your birthday and the current date
+            const daysBetween = Math.floor(nowLuxon.diff(birthday, "days").days);
+
+            // 2. Display the number of years, months, and days between your birthday and current date
+            const age = nowLuxon.diff(birthday, ["years", "months", "days"]).toObject();
+
+            // 3. Given two dates, display the date closest to the current date
+            const dateOne = DateTime.fromISO("2026-12-25");
+            const dateTwo = DateTime.fromISO("2027-02-27");
+
+            const differenceOne = Math.abs(dateOne.diff(nowLuxon, "days").days);
+            const differenceTwo = Math.abs(dateTwo.diff(nowLuxon, "days").days);
+
+            const closestDate = differenceOne < differenceTwo ? dateOne : dateTwo;
+
+            // 4. Given two dates, display whether the first date is before or after the second date
+            const firstDate = DateTime.fromISO("2026-08-01");
+            const secondDate = DateTime.fromISO("2026-08-20");
+
+            const beforeOrAfter = firstDate < secondDate ? "before" : "after";
+
+            // 5. Display the current time in London
+            const londonTime = nowLuxon
+                .setZone("Europe/London")
+                .toLocaleString(DateTime.TIME_SIMPLE);
+
+            eDisplayLuxon.innerHTML = `
+        <p>1. Days between birthday and current date: ${daysBetween} days</p>
+
+        <p>2. Age: ${Math.floor(age.years)} years, ${Math.floor(age.months)} months, and ${Math.floor(age.days)} days</p>
+
+        <p>3. The date closest to the current date is: ${closestDate.toFormat("MMMM dd, yyyy")}</p>
+
+        <p>4. The first date is ${beforeOrAfter} the second date.</p>
+
+        <p>5. The current time in London is: ${londonTime}</p>
+      `;
+        })();
+    </script>
+</body>
+
+</html>
