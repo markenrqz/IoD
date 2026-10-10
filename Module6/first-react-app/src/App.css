@@ -1,0 +1,187 @@
+
+/* Main application layout */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* componentBox class styles a component into a box */
+.componentBox {
+  border: 1px solid #aaa;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  background: #efefef;
+  border-radius: 8px;
+}
+
+/* Style the main headings */
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #444;
+}
+
+/* Exercise 2: BigCats styling */
+
+/* Remove the default list styling */
+.catList {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style each individual cat */
+.singleCat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  text-align: left;
+}
+
+/* Style the cat images */
+.catImage {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Style the cat names */
+.singleCat h3 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+/* Style the Latin names */
+.singleCat p {
+  margin: 0;
+  color: #666;
+}
+
+
+/* Exercise 3: Emoji Component styling */
+
+/* Make the emoji larger and easier to see. */
+.emojiDisplay {
+  font-size: 80px;
+  margin: 20px 0;
+}
+
+/* Style the Change Mood button. */
+.Emoji button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change the button colour when hovering over it. */
+.Emoji button:hover {
+  background-color: #0056b3;
+}
+
+
+/* ==========================================
+   Exercise 4 - BigCats Sorting and Filtering
+   ========================================== */
+
+/* Arrange the buttons with spacing between them. */
+.catButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* Style the BigCats buttons. */
+.catButtons button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change the button colour when hovering over it. */
+.catButtons button:hover {
+  background-color: #218838;
+}
+
+
+/* ==========================================
+   Exercise 5 - AddCatForm and Delete Buttons
+   ========================================== */
+
+/* Arrange the form inputs vertically. */
+.catForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Style the form labels. */
+.catForm label {
+  font-weight: bold;
+}
+
+/* Style the form inputs. */
+.catForm input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the Add Cat button. */
+.catForm button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change the button colour when hovering. */
+.catForm button:hover {
+  background-color: #0056b3;
+}
+
+/* Allow the cat details to use the available space. */
+.catDetails {
+  flex: 1;
+}
+
+/* Style the Delete button. */
+.deleteCatButton {
+  padding: 8px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change the Delete button colour when hovering. */
+.deleteCatButton:hover {
+  background-color: #c82333;
+}
