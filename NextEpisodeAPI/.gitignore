@@ -1,0 +1,5 @@
+# Dependencies - these can be recreated using npm install
+node_modules/
+
+# Environment variables - may contain database credentials
+.env
